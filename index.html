@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Flash-quiz</a>
+                <a class="navbar-brand" href="#">FlashQuiz</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbar-header" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,8 +36,81 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-fluid">
+        <h1 class="text-center mt-5 mb-5">FlashQuiz - Climbing Quiz for beginners</h1>
+        <p class="text-center mb-5">The FlashQuiz is designed to test your knowledge while starting out rock climbing.<br />
+            
+        <strong>This is only for fun and you should always learn to climb with an instructor before practising</strong></p>
 
+        <form id="climbing-quiz">
+
+            <fieldset class="container-fluid" id="qu1">
+                <legend>1. Which piece of equipment is <strong>vital</strong> for indoor roped climbing?</legend>
+                
+                <div class="row">
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-helmet">Helmet</label>
+                        <input class="form-check-input" id="qu1-helmet" type="radio"/>
+                    </div>
+
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-harness">Harness</label>
+                        <input class="form-check-input" id="qu1-harness" type="radio">
+                    </div>
+
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-headtorch">Head Torch</label>
+                        <input class="form-check-input" id="qu1-headtorch" type="radio">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <hr />
+
+            <fieldset class="container-fluid" id="qu2">
+                <legend>2. What is the term used to describe controlling the rope to ensure a climber gets up and down the wall safely?</legend>
+                <div class="row">
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-lead">Leading</label>
+                        <input class="form-check-input" id="qu2-lead" type="radio">
+                    </div>
+
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-solo">Free Soloing</label>
+                        <input class="form-check-input" id="qu2-solo" type="radio">
+                    </div>
+                    
+                    <div class="col-1 form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-belay">Belaying</label>
+                        <input class="form-check-input" id="qu2-belay" type="radio">
+                    </div>
+                </div>
+            </fieldset>
+
+            <hr />
+
+            <fieldset class="container-fluid" id="qu3">
+                <legend>3. Which is used to keep hands dry while climbing?</legend>
+                    
+                <div class="row">
+                        <div class="col-1 form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-chalk">Chalk</label>
+                            <input class="form-check-input" id="qu3-chalk" type="radio">
+                        </div>
+                    
+                        <div class="col-1 form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-towel">Towel</label>
+                            <input class="form-check-input" id="qu3-towel" type="radio">
+                        </div> 
+                            
+                        <div class="col-1 form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-tshirt">T-shirt</label>
+                            <input class="form-check-input" id="qu3-tshirt" type="radio">
+                        </div>
+                </div>   
+            </fieldset>
+
+        </form>
     </main>
 
     <footer>
