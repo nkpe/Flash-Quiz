@@ -2,21 +2,22 @@ const allQuestions = document.getElementsByClassName("quiz-qu");
 const allAnswerOptions = document.getElementsByClassName("qu-option");
 const submitBtn = document.getElementById("quiz-submit");
 const quizResult = document.getElementById("quiz-result");
-
-// let userCorrectAnswers = [];
+const climbingQuizForm = document.getElementById("climbing-quiz");
 
 quizResult.style.display = "none";
 const clickMap = new Map();
 
 let clickMapSet = (e) => {
     clickMap.set(e.target.name , e.target.classList);
+    console.log(clickMap);
 };
 
 for (option of allAnswerOptions){
     option.addEventListener('click' , clickMapSet);
 };
 
-let correctAnswers = (e) => {
+let correctAnswers = ( ) => {
+    console.log("Correct Answers Hit");
     let mapValues = clickMap.values();
     let resultsArray = [];
     for (let value of mapValues){
@@ -25,23 +26,26 @@ let correctAnswers = (e) => {
     };
 
     let counter = 0;
-
+    console.log(counter);
     for (let result of resultsArray){
         if (result === true){
             counter++;
-        }
+        };
     };
     validateAnswers(counter);
 };
 
 let validateAnswers = (counter) => {
+    console.log("validateAnswers Hit");
+    // climbingQuizForm.style.display = "none";
     let percentCorrect = (counter / allQuestions.length) * 100;
-    quizResult.style.display = "block";
+    quizResult.style.display = "flex";
     if (percentCorrect === 100){
-        quizResult.innerHTML = `<p>You got ${percentCorrect}%. Well Done!</p>`;
+        quizResult.innerHTML = `You got all questions correct! Well Done!`;
     } else {
-        quizResult.innerHTML = `<p>You got ${Math.round(percentCorrect)}%. Would you like to try again?</p>`;
+        quizResult.innerHTML = `You got ${counter}/${allQuestions.length} (${Math.round(percentCorrect)}%). Would you like to try again?`;
     };
+    console.log("end game");
 };
 
 submitBtn.addEventListener('click' , correctAnswers);

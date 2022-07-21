@@ -18,8 +18,16 @@ form .btn:hover , form .btn:active{
 }
 
 #quiz-result {
-    height: 100px;
+    height: 50px;
+    display: none;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
     background-color: #4b8181;
+    text-align: center;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
 }
 
 /* Footer */
