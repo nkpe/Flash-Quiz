@@ -78,6 +78,8 @@ The code can be run locally by downloading from my GitHub repository following t
 
 * [Adding name / label to several checkboxes](https://stackoverflow.com/questions/19457695/label-for-checkbox)
 
+* [Contains Method](https://stackoverflow.com/questions/5898656/check-if-an-element-contains-a-class-in-javascript)
+
 ## Content
 
 ## Media

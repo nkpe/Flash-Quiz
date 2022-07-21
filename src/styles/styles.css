@@ -1,8 +1,41 @@
-header {
+header , footer {
     background-color: #6caeae;
 }
 
 /* Quiz */
 form fieldset .row{
     margin-left: 0px;
+}
+
+form .btn {
+    background-color: #6caeae;
+    border: none;
+}
+
+form .btn:hover , form .btn:active{
+    background-color: #4b8181;
+    border: none;
+}
+
+#quiz-result {
+    height: 100px;
+    background-color: #4b8181;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 50px;
+}
+
+.github-link {
+    text-decoration: none;
+}
+
+.github-link .github-icon {
+    height: 1em;
+    padding-right: 5px;
 }
