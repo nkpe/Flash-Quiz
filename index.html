@@ -16,7 +16,7 @@
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Flash-quiz</a>
+                <a class="navbar-brand" href="#">FlashQuiz</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbar-header" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -36,13 +36,103 @@
         </nav>
     </header>
 
-    <main>
+    <main class="container-fluid">
+        <h1 class="text-center mt-5 mb-5">FlashQuiz - Climbing Quiz for beginners</h1>
+        <p class="text-center mb-5">The FlashQuiz is designed to test your knowledge while starting out rock climbing.<br />
+            
+        <strong>This is only for fun and you should always learn to climb with an instructor before practising</strong></p>
 
+        <form id="climbing-quiz">
+
+            <hr />
+
+            <!-- Question 1 -->
+            <fieldset class="container-fluid quiz-qu" id="qu1">
+                <legend>1. Which piece of equipment is <strong>vital</strong> for indoor roped climbing?</legend>
+                
+                <div class="row row-cols-1 row-cols-xl-6">
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-helmet">Helmet</label>
+                        <input class="form-check-input qu-option" id="qu1-helmet" name="qu1" type="radio"/>
+                    </div>
+
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-harness">Harness</label>
+                        <input class="form-check-input qu-option qu-correct" id="qu1-harness" name="qu1" type="radio">
+                    </div>
+
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu1-headtorch">Head Torch</label>
+                        <input class="form-check-input qu-option" id="qu1-headtorch" name="qu1" type="radio">
+                    </div>
+                </div>
+            </fieldset>
+            
+            <hr />
+
+            <!-- Question 2 -->
+            <fieldset class="container-fluid quiz-qu" id="qu2">
+                <legend>2. What is the term used to describe controlling the rope to ensure a climber gets up and down the wall safely?</legend>
+                <div class="row row-cols-1 row-cols-xl-6">
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-lead">Leading</label>
+                        <input class="form-check-input qu-option" id="qu2-lead" name="qu2" type="radio">
+                    </div>
+
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-solo">Free Solo</label>
+                        <input class="form-check-input qu-option" id="qu2-solo" name="qu2" type="radio">
+                    </div>
+                    
+                    <div class=" form-check form-check-inline">
+                        <label class="form-check-label" for="qu2-belay">Belaying</label>
+                        <input class="form-check-input qu-option qu-correct" id="qu2-belay" name="qu2" type="radio">
+                    </div>
+                </div>
+            </fieldset>
+
+            <hr />
+
+            <!-- Question 3 -->
+            <fieldset class="container-fluid quiz-qu" id="qu3">
+                <legend>3. Which is used to keep hands dry while climbing?</legend>
+                    
+                <div class="row row-cols-1 row-cols-xl-6">
+                        <div class=" form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-chalk">Chalk</label>
+                            <input class="form-check-input qu-option qu-correct" id="qu3-chalk" name="qu3" type="radio">
+                        </div>
+                    
+                        <div class=" form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-towel">Towel</label>
+                            <input class="form-check-input qu-option" id="qu3-towel" name="qu3" type="radio">
+                        </div> 
+                            
+                        <div class=" form-check form-check-inline">
+                            <label class="form-check-label" for="qu3-tshirt">T-shirt</label>
+                            <input class="form-check-input qu-option" id="qu3-tshirt" name="qu3" type="radio">
+                        </div>
+                </div>   
+            </fieldset>
+
+            <hr />
+
+            <div class="container-fluid">
+                <button class="btn btn-primary" id="quiz-submit" type="submit">Finish</button>
+            </div>
+            
+            <div id="quiz-result"></div>
+        </form>
     </main>
 
-    <footer>
-
+    <footer class="d-flex justify-content-between d-row align-items-center">
+        <a class="github-link d-inline-flex justify-content-start align-items-center link-dark" href="https://github.com/nkpe/Pairs-Game" target=" _blank">
+            <img class="github-icon" src="src/imgs/github.svg" alt="GitHub Icon" />
+            <div>Source Code</div>
+        </a>
+        <div id="copyright">&copy; Naomi Pearse 2022</div>
     </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
