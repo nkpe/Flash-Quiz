@@ -18,7 +18,7 @@ form .btn:hover , form .btn:active{
 }
 
 #quiz-result {
-    height: 50px;
+    height: fit-content;
     display: none;
     justify-content: center;
     align-content: center;
@@ -27,7 +27,7 @@ form .btn:hover , form .btn:active{
     text-align: center;
     color: white;
     font-size: 1.5em;
-    margin-top: 20px;
+    padding: 10px;
 }
 
 /* Footer */
