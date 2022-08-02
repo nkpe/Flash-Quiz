@@ -2,6 +2,14 @@ header , footer {
     background-color: #6caeae;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 /* Quiz */
 form fieldset .row{
     margin-left: 0px;
