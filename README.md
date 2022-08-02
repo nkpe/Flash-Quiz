@@ -82,6 +82,8 @@ The code can be run locally by downloading from my GitHub repository following t
 
 ## Content
 
+[Image for Favicon](https://favicon.io/emoji-favicons/person-climbing)
+
 ## Media
 
 ## Acknowledgements
