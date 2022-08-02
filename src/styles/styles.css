@@ -2,6 +2,14 @@ header , footer {
     background-color: #6caeae;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
 /* Quiz */
 form fieldset .row{
     margin-left: 0px;
@@ -18,7 +26,7 @@ form .btn:hover , form .btn:active{
 }
 
 #quiz-result {
-    height: 50px;
+    height: fit-content;
     display: none;
     justify-content: center;
     align-content: center;
@@ -27,7 +35,7 @@ form .btn:hover , form .btn:active{
     text-align: center;
     color: white;
     font-size: 1.5em;
-    margin-top: 20px;
+    padding: 10px;
 }
 
 /* Footer */
