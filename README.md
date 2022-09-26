@@ -1,9 +1,11 @@
-# **Climbing-Quiz**
+# **Flash-Quiz**
+
+Designed to test basic knowledge of best climbing practises and techniques of new climbers.
 
 # **UX**
 ## Overview
 
-## PAGE 1
+Bootstrap used to acheieve a clean, minimal and easy to use layout. The questions and answers are clear to the user.
 
 ## Wireframes
 
@@ -30,8 +32,6 @@
 # **Testing**
 
 ## HTML & CSS Validators
-
-## Interesting Bugs / Problems
 
 # **Deployment**
 
