@@ -5,7 +5,7 @@ Designed to test basic knowledge of best climbing practises and techniques of ne
 # **UX**
 ## Overview
 
-Bootstrap used to acheieve a clean, minimal and easy to use layout. The questions and answers are clear to the user.
+Bootstrap used to achieve a clean, minimal and easy to use layout. The questions and answers are clear to the user.
 # **Features**
 ## All Pages
 Bootstrap components used: 
