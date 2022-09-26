@@ -6,16 +6,12 @@ Designed to test basic knowledge of best climbing practises and techniques of ne
 ## Overview
 
 Bootstrap used to acheieve a clean, minimal and easy to use layout. The questions and answers are clear to the user.
-
-## Wireframes
-
-
 # **Features**
-
 ## All Pages
-
-## PAGE 1
-
+Bootstrap components used: 
+* **Nav Bar**
+* **Container Fluid** - used on the main area, and each fieldset, of the webpage for responsive design.
+* **Rows & Columns** - with responsive class (such as xl) to create the layout and ensure the layout is responsive.
 
 # **Technologies Used**
 
@@ -23,15 +19,9 @@ Bootstrap used to acheieve a clean, minimal and easy to use layout. The question
 * **CSS3** - used to add custom styling to the content of the webpage. 
 * **Bootstrap** - used to create the header and navigation bar and provides modal features. The bootstrap grid provides responsive layout to the website as a whole.
 * **Bootstrap Icons** - used to render GitHub icon in footer and the how to button within the header. 
-* **JavaScript** - heavily used for the game logic (randomise card, check for correct pairs and reset the pack).
-* **Google Fonts** - used to import a custom font to style the text. 
+* **JavaScript** - heavily used for the validating the correct answer. The correct answers are defined by a class, ensuring the quiz is easy to scale up.  
 * **Git** - this was used during production to efficiently commit and push changes to the GitHub repository so no code could be lost. 
 * **GitHub** - this was used to create and manage a remote repository which holds all commits and pushed from Git. I made uses of the repository branches to separate and track working changes, in case of bugs, before committing new changes to the master branch.
-
-
-# **Testing**
-
-## HTML & CSS Validators
 
 # **Deployment**
 
@@ -52,7 +42,7 @@ During development I regularly used the git command line tool to create branches
 8. git pull (to bring remote changes into my local repository)
 
 ## Deployment
-The page has been deployed to GitHub pages for hosting - [Pairs Game hosted on GitHub pages](https://nkpe.github.io/Pairs-Game/).
+The page has been deployed to GitHub pages for hosting - [Flash Quiz hosted on GitHub pages](nkpe.github.io/Flash-Quiz/).
 
 I followed the following steps to deploy to GitHub pages: 
 
@@ -63,7 +53,7 @@ I followed the following steps to deploy to GitHub pages:
 As I deployed the main branch to GitHub pages at the start of my project, it is kept up to date with each pull request to the main branch.
 ## Repo Link
 
-
+[Flash Quiz Repo](https://github.com/nkpe/Flash-Quiz).
 
 ## Running Code Locally
 The code can be run locally by downloading from my GitHub repository following these steps: 
@@ -80,10 +70,7 @@ The code can be run locally by downloading from my GitHub repository following t
 
 * [Contains Method](https://stackoverflow.com/questions/5898656/check-if-an-element-contains-a-class-in-javascript)
 
-## Content
+## Media
 
 [Image for Favicon](https://favicon.io/emoji-favicons/person-climbing)
 
-## Media
-
-## Acknowledgements
